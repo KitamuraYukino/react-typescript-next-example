@@ -1,12 +1,8 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
-// import Link from 'next/link';
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../app/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import type { PostData } from '../lib/posts';
+import utilStyles from '../app/utils.module.css';
 
 type Props = {
   allPostsData: PostData[];
