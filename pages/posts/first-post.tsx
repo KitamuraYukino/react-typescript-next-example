@@ -1,20 +1,23 @@
 import type { FC } from 'react';
+// import Link from 'next/link';
+import Head from 'next/head';
+// import Image from 'next/image';
+import Layout from '../../components/layout';
 
 const FirstPost: FC = () => {
-	return <h1>First Post</h1>;
-};
-export default FirstPost;
-
-import Link from 'next/link';
-
-const NextPost: FC = () => {
-	// return <h1>First Post</h1>;
 	return (
-		<>
-			<h1>First Post</h1>
-			<h2>
-				<Link href="/">← Back to home</Link>
-			</h2>
-		</>
+		// <>
+		<Layout>
+			<Head>
+				<title>First Post</title>
+			</Head>
+			{/* <Image */}
+			{/* /> */}
+			{/* <h2> */}
+			{/* <Link href="/">← Back to home</Link> */}
+		{/* </h2> */}
+		{/* </> */ }
+		</Layout>
 	);
 };
+export default FirstPost;
